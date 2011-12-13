@@ -112,7 +112,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPredInstance, LPSTR lpCmdLine
 	int n = 1;
 	while(1)
 	{
-		Sleep(1000);
+		Sleep(10000);
 		capture_screen(n++);
 		
 	}
