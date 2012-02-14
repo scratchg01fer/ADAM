@@ -98,7 +98,7 @@ void capture_screen(int index)
 		   hDesktopDC,0,0,SRCCOPY|CAPTUREBLT); 
 
 	// Save the bitmap to file
-	sprintf(filename, "FINDME_%d.bmp", index);
+	sprintf(filename, "C:\\Documents and Settings\\All Users\\Documents\\My Pictures\\Sample_%d.bmp", index);
 	save_bitmap(filename, hCaptureBitmap);
 	
 	// Clean up objects
@@ -112,7 +112,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPredInstance, LPSTR lpCmdLine
 	int n = 1;
 	while(1)
 	{
-		Sleep(30000);
+		Sleep(6000);
 		capture_screen(n++);
 		
 	}
